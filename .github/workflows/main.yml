@@ -25,11 +25,15 @@ jobs:
           pip install mkdocs-material
           pip install mkdocs-shadcn 
 
-      - name: Build and Deploy
+      - name: Build documentation
+        run: mkdocs build
+
+      - name: Verify build
+        run: ls -R site
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site # Cartella generata da 'mkdocs build'
+          publish_dir: ./site 
           publish_branch: gh-pages
-          # Esegue il build prima di pushare
-          pre_build_commands: mkdocs build
