@@ -1,0 +1,9 @@
+site_name: Che bella documentazione
+theme:
+  name: shadcn
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
