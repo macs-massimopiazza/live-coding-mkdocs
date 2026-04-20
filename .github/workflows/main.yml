@@ -1,0 +1,35 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger al push sul branch main
+
+permissions:
+  contents: write # Necessario per pushare sul branch gh-pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material
+          pip install mkdocs-shadcn 
+
+      - name: Build and Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site # Cartella generata da 'mkdocs build'
+          publish_branch: gh-pages
+          # Esegue il build prima di pushare
+          pre_build_commands: mkdocs build

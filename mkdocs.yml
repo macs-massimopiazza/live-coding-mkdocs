@@ -1,4 +1,6 @@
-site_name: Che bella documentazione
+site_name: Nome della tua Documentazione
+site_url: https://macs-massimopiazza.github.io/live-coding-mkdocs/
+
 theme:
   name: shadcn
 
