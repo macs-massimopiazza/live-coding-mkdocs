@@ -27,3 +27,6 @@ jobs:
         run: |
           echo "Ecco i file scaricati nella macchina virtuale:"
           ls -la
+      - name: Attesa di 10 secondi
+        run: sleep 10s
+        shell: bash
