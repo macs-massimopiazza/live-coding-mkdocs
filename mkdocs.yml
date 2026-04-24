@@ -1,8 +1,9 @@
-site_name: Nome della tua Documentazione
+site_name: PenguinOps Docs
 site_url: https://macs-massimopiazza.github.io/live-coding-mkdocs/
 
 theme:
-  name: shadcn
+  # name: shadcn
+  name: material
 
 markdown_extensions:
   - pymdownx.superfences:

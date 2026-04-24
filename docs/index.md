@@ -1,28 +1,29 @@
-# Bella documentazione
+# 🐧 PenguinOps Docs
 
-Clicca qui per dettagli [Clicca qui](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
+Benvenuto nella documentazione ufficiale del laboratorio **PenguinOps**.
 
-## Commands
+Qui imparerai come deployare container Docker… guidato da una colonia di pinguini altamente qualificati.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+![Pinguino Docker](./assets/image.png)
 
-## Project layout
+## 🚀 Obiettivi
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* Capire le basi di Docker
+* Costruire immagini container
+* Eseguire deploy in ambienti controllati
+* Sopravvivere al giudizio silenzioso dei pinguini
 
-# Architettura sito
-```mermaid
-graph TD
-  A[cawabanga] --> B{Il Server risponde?}
-  B -- Sì --> C[Log In]
-  B -- No --> D[Controlla Connessione]
-  D --> B
-```
+## 📚 Struttura
 
-ora si reloadda
+* [Setup dell'ambiente](setup.md)
+* [Deploy avanzato](deploy.md)
+
+## 🧊 Nota importante
+
+I pinguini:
+
+* odiano i container mal configurati
+* apprezzano i volumi persistenti
+* non perdonano `latest` nei tag delle immagini
+
+Buona fortuna.
