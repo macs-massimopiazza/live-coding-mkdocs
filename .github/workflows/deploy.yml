@@ -1,0 +1,25 @@
+name: Deploy documentazione
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy_documentation:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Copiare codice repository
+      - name: "Copio codice repo"
+        uses: actions/checkout@v4
+      # 2. Installare python
+      - name: "Installo python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      # 3. Installare mkdocs
+      - name: "Installo Mkdocs"
+        run: pip install mkdocs-material
+      # 4. Deploy con mkdocs gh-pages 
+      - name: "Deployio documentazione su gh-pages"
+        run: mkdocs gh-deploy --force
