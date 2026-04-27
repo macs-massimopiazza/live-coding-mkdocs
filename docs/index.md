@@ -1,6 +1,6 @@
 # 🐧 PenguinOps Docs
 
-Benvenuto nella documentazione ufficiale del laboratorio **PenguinOps**.
+WE WE, ecco qua documentazione ufficiale del laboratorio **PenguinOps**.
 
 Qui imparerai come deployare container Docker… guidato da una colonia di pinguini altamente qualificati.
 
