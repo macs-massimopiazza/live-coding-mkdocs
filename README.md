@@ -2,3 +2,6 @@
 - Creazione di documentazione base con mkdocs
 - Grafici con mermaid.js
 - Pipeline di deploy automatico e hosting con Github Actions e Pages
+
+
+Ciao Sandbox :D QUesto fara partire il workflow
