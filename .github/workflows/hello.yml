@@ -5,6 +5,8 @@ jobs:
   saluta_e_controlla:
     runs-on: ubuntu-latest
     steps:
+      - name: "Copio codice dalla repo nella VM"
+        uses: actions/checkout@v4
       - name: "Saluto la classe"
         run: echo "Ciao sandbox :D"
       - name: "Stampo la directory"
