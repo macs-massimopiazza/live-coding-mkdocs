@@ -1,0 +1,11 @@
+name: "Il mio primo workflow"
+on:
+  push:
+jobs:
+  saluta_e_controlla:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Saluto la classe"
+        run: echo "Ciao sandbox :D"
+      - name: "Stampo la directory"
+        run: ls -la
